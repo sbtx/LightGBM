@@ -209,7 +209,9 @@ The following dependencies should be installed before compilation:
 
 -  OpenCL 1.2 headers and libraries, which is usually provided by GPU manufacture.
 
-   The generic OpenCL ICD packages (for example, Debian package ``cl-icd-libopencl1`` and ``cl-icd-opencl-dev``) can also be used.
+   The generic OpenCL ICD packages (for example, Debian package ``cl-icd-libopencl1`` and ``cl-icd
+   
+pencl-dev``) can also be used.
 
 -  libboost 1.56 or later (1.61 or later recommended).
 
@@ -227,7 +229,7 @@ To build LightGBM GPU version, run the following commands:
   mkdir build ; cd build
   cmake -DUSE_GPU=1 ..
   # if you have installed the NVIDIA OpenGL, please use following command instead
-  # sudo cmake -DUSE_GPU=1 -DOpenCL_LIBRARY=/usr/local/cuda/lib64/libOpenCL.so -OpenCL_INCLUDE_DIR=/usr/local/cuda/include/ ..
+  # sudo cmake -DUSE_GPU=1 -DOpenCL_LIBRARY=/usr/local/cuda/lib64/libOpenCL.so -DOpenCL_INCLUDE_DIR=/usr/local/cuda/include/ ..
   make -j4
 
 Windows
